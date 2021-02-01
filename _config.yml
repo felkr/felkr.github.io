@@ -80,24 +80,14 @@ footer:
       url: "https://github.com/felkr"
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: about
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+
 
 category_archive:
   type: liquid
