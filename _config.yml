@@ -121,7 +121,7 @@ links:
   - github:
       name: GitHub
       show: true
-      href: https://github.com/tsjensen
+      href: https://github.com/felkr
       icon: fab fa-github
   - codepen:
       name: CodePen
