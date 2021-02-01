@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Felix"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "https://avatars.githubusercontent.com/u/5049120"
   bio    : " I am currently studying software development. I have done internship as a fullstack developer (Spring, Handlebars.js/Vue)."
   links:
     - label: "Website"
