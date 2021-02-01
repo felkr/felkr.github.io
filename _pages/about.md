@@ -3,6 +3,26 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+### Hi there 👋:
+I am currently studying software development.<br/>
+I have done internship as a fullstack developer (Spring, Handlebars.js/Vue).<br/>
+<!-- I hope this giphy link keeps working -->
+<img align="right" alt="GIF" src="https://media3.giphy.com/media/26xBQ7d3MeECbUpCU/giphy.gif" width="400" height="280" />
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+- 🔭 I’m currently working on Backend Development.
+- 🤔 I’m looking for help with Open Source Contribution.
+- 💬 Ask me about JavaScript.
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I'm a big nerd.
+- 🎢 Profile Visitors Count:  
+![](https://visitor-badge.glitch.me/badge?page_id=xHatchx.xHatchx)
+
+<br/>
+
+
+<div align="center">
+  
+
+### Show ❤️ by 🌟 my [repositories](https://github.com/xHatchx?tab=repositories)!
+
+</div>
