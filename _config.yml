@@ -15,9 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Felkr
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  I am currently studying software development.
-  I have done internship as a fullstack developer (Spring, Handlebars.js/Vue).
+#description: >- # this means to ignore newlines until "baseurl:"
+ 
 # twitter_username: username
 github_username: felkr
 minimal_mistakes_skin: default
@@ -57,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Felix"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : " I am currently studying software development. I have done internship as a fullstack developer (Spring, Handlebars.js/Vue)."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
