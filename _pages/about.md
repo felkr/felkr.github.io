@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /
 title: "About"
 ---
 
@@ -23,6 +23,6 @@ I have done internship as a fullstack developer (Spring, Handlebars.js/Vue).<br/
 <div align="center">
   
 
-### Show ❤️ by 🌟 my [repositories](https://github.com/xHatchx?tab=repositories)!
+Show ❤️ by 🌟 my [repositories](https://github.com/xHatchx?tab=repositories)!
 
 </div>
