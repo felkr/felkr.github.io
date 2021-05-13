@@ -1,107 +1,314 @@
----
-permalink: /
----
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if site.title %}{{ site.title }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta name="JekyllTheme" content="Fuse Core by Thomas Jensen" />
-    {% if site.robots.description %}<meta name="Description" content="{{ site.robots.description }}" />{% endif %}
-    {% if site.robots.keywords %}<meta name="Keywords" content="{{ site.robots.keywords }}" />{% endif %}
-    {% if site.robots.crawl %}<meta name="Robots" content="{{ site.robots.crawl }}" />{% endif %}
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if site.url %}<link rel="canonical" href="{{ site.url }}">{% endif %}
-    {% include analytics.html %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Showcase - Personal Portfolio One Page Bulma Theme</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/showcase.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+      integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.baseurl }}/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="{{ site.baseurl }}/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="msapplication-config" content="{{ site.baseurl }}/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Stylesheets -->
-    {% comment %} Bootstrap should be the first stylesheet {% endcomment %}
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/theme.css">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc">
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
-    
-    {% if site.ga and site.ga.cookieconsent %}
-    <!-- Cookie Consent popup to comply with EU cookie law -->
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-          href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
-          integrity="sha384-nA7usz4cMKo7RylsCZnpe0V9qx5X7sa011o0OrDzrKUE7Ero1gB48Fjaw6SFxVZe" />
-    <script async crossorigin="anonymous" data-cfasync="false"
-          src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
-          integrity="sha384-xLPjH6nqG4p/2mu1KJ1t+4KqcvkyXVwBucQtyGK65lDNfKzECxGY/QEYWR+Wompr"></script>
-    <script>
-        window.addEventListener("load", function(){
-          window.cookieconsent.initialise({
-            "cookie": { "expiryDays": 730 },
-            "palette": {
-              "popup": { "background": "#383b75" },
-              "button": { "background": "#f1d600" }
-            },
-            "theme": "classic"
-          });
-        });
-    </script>
-    {% endif %}
-</head>
-<body class="fullscreen-background">
-
-<div class="glass-pane">
-<div class="container fuse-core-content pb-4">
-
-<div class="row pt-sm-4">
-    <div class="col text-center"><img id="avatar" class="my-3 my-sm-4" alt="{{ site.name }}"
-        src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
-        else %}{{ site.baseurl }}/{{ site.avatar }}{% endif %}{%
-        else %}{{ site.baseurl }}/images/avatar.svg{% endif %}"></div>
-</div>
-<div class="row">
-    <div class="col">
-        <h1 class="text-center font-weight-bold">{{ site.name }}</h1>
-        {% if site.subtitle %}<h3 class="text-center font-weight-light">{{ site.subtitle }}</h3>{% endif %}
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="img/preloader.gif" alt="" />
+      </div>
     </div>
-</div>
+    <!-- End Preloader-->
+    <!-- Begin Scroll Up Button -->
 
-<div class="row justify-content-center links pt-1 pt-sm-2">
-{% for hash in site.links %}{% for linkInfo in hash %}{% if linkInfo[1].show %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="{{ linkInfo[1].href }}"{% if site.ga %}
-        onclick="trackOutboundLink('{{ linkInfo[1].name }}', '{{ linkInfo[1].href }}'); return false;"
-        {% endif %}><i class="{{ linkInfo[1].icon }} fa-fw"></i>
-        <span class="d-inline d-sm-none">{{ linkInfo[1].name }}</span></a></div>
-{% endif %}{% endfor %}{% endfor %}
-</div>
+    <form action="#home">
+      <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </form>
+    <!-- End Scroll Up Button -->
 
-{% if site.extra_html %}
-<div class="row justify-content-center">
-    <div class="col mt-3 text-sm-center fuse-core-extra">{{ site.extra_html }}</div>
-</div>
-{% endif %}
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#home"> Home </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#about-me"> About Me </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#skills"> Skills </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#my-work"> My Work </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Hey there, I'm</h1>
+            <h2 class="title">Felix</h2>
+            <h1 class="subtitle profession">
+              Currently studying software development
+            </h1>
+          </div>
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about-me">About Me</a>
+                  </li>
+                  <li>
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#my-work">My Work</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
 
-</div>
-</div>
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" id="about-me">
+        <div class="container">
+          <div class="column is-12 about-me">
+            <h1 class="title has-text-centered section-title">About Me</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p>
+                I have done internship as a fullstack developer (Spring,
+                Handlebars.js/Vue).
+              </p>
+              Currently working on Backend Development.<br />
+              <b>Pronouns:</b>
+              He/Him<br />
+              <b>Fun fact:</b> I'm a big nerd.
+              <br />
+              <div class="is-divider"></div>
+              <div class="columns about-links">
+                <div class="column">
+                  <p class="heading">
+                    <strong>Email Me</strong>
+                  </p>
+                  <p class="subheading">hello@felkr.me</p>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6 right-image" data-aos="fade-left">
+              <img class="is-rounded" src="coffee.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me Content -->
 
-<footer><div class="container"><div class="row">
-    <div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a>
-    Jekyll theme.</div>
-</div></div></footer>
+      <!-- Begin Skills Content -->
+      <div class="section-light skills" id="skills">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">Skills</h1>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>JavaScript</h1>
+              <progress class="progress" value="90" max="100">60%</progress>
+              <h1>Dart</h1>
+              <progress class="progress" value="70" max="100">30%</progress>
+              <h1>Java</h1>
+              <progress class="progress" value="58" max="100">45%</progress>
+              <h1>C++</h1>
+              <progress class="progress" value="50" max="100">30%</progress>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>CSS</h1>
+              <progress class="progress" value="95" max="100">30%</progress>
+              <h1>HTML</h1>
+              <progress class="progress" value="95" max="100">30%</progress>
+              <h1>Linux</h1>
+              <progress class="progress" value="67" max="100">30%</progress>
+              <h1>Vue</h1>
+              <progress class="progress" value="50" max="100">45%</progress>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>Rust</h1>
+              <progress class="progress" value="43" max="100">30%</progress>
+              <h1>GLSL</h1>
+              <progress class="progress" value="30" max="100">30%</progress>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>MongoDB</h1>
+              <progress class="progress" value="50" max="100">30%</progress>
+              <h1>React</h1>
+              <progress class="progress" value="30" max="100">60%</progress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Skills Content -->
+      <!-- Begin Work Content -->
+      <div class="section-dark my-work" id="my-work">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">My Work</h1>
+            </div>
+            <a
+              class="column is-6 work-item"
+              href="https://github.com/felkr/firefox-minima"
+            >
+              <b><span class="oi" data-glyph="book"></span>firefox-minima</b>
+              Minimalist Firefox Theme inspired by qutebrowser
+              <span
+                class="oi"
+                data-glyph="external-link"
+                style="font-size: smaller"
+              ></span>
+            </a>
+            <a
+              class="column is-6 work-item"
+              href="https://github.com/felkr/steelseries-gamedac-pulseaudio"
+            >
+              <b
+                ><span class="oi" data-glyph="book"></span
+                >steelseries-gamedac-pulseaudio</b
+              >
+              ChatMix and surround sound on the Steelseries Arctis Pro on Linux
+              <span
+                class="oi"
+                data-glyph="external-link"
+                style="font-size: smaller"
+              ></span>
+            </a>
+            <a
+              class="column is-6 work-item"
+              href="https://github.com/felkr/dotfiles"
+            >
+              <b><span class="oi" data-glyph="book"></span>dotfiles</b>
+              my artix linux dotfiles
+              <span
+                class="oi"
+                data-glyph="external-link"
+                style="font-size: smaller"
+              ></span>
+            </a>
+            <a
+              class="column is-6 work-item"
+              href="https://github.com/felkr/predator"
+            >
+              <b><span class="oi" data-glyph="book"></span>predator</b>
+              simple fzf-based file explorer
+              <span
+                class="oi"
+                data-glyph="external-link"
+                style="font-size: smaller"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Work Content -->
+    </div>
+    <!-- End Main Content -->
 
-</body>
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p style="text-align: left">
+        <!-- <strong class="white">Bulma</strong> by
+        <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is
+        licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+        website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          >CC BY NC SA 4.0</a
+        >. -->
+        <a href="license.html">Site license</a>
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="showcase.js"></script>
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
 </html>
